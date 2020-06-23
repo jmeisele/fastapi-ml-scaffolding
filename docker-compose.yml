@@ -1,0 +1,12 @@
+version: '3'
+services: 
+    python1:
+        container_name: ml-api-service-1
+        restart: always
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+            - "3000:3000"
+        volumes: 
+            - ./app1:/app
