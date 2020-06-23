@@ -1,8 +1,7 @@
 FROM python:3.7-stretch
 RUN pip install pipenv
-COPY Pipfile* /tmp
-RUN cd /tmp && pipenv lock --requirements > requirements.txt
-RUN pip install -r /tmp/requirements.txt
-COPY . /tmp/myapp
-RUN pip install /tmp/myapp
-CMD ["uvicorn", "fastapi_scaffolding.main:app", "host='0.0.0.0'", "port=3000"]
+COPY . ./app
+WORKDIR /app
+RUN pipenv install 
+EXPOSE 3000
+CMD ["pipenv", "run", "uvicorn", "fastapi_scaffolding.main:app", "--host=0.0.0.0", "--port=3000", "--workers=10"]
