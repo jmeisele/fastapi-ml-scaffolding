@@ -2,9 +2,15 @@ from fastapi import APIRouter, Depends
 from starlette.requests import Request
 
 from fastapi_scaffolding.core import security
-from fastapi_scaffolding.models.payload import HousePredictionPayload # Incoming payload data model
-from fastapi_scaffolding.models.prediction import HousePredictionResult # Outbound prediction result data model
-from fastapi_scaffolding.services.models import HousePriceModel # ML Model itself
+
+# Incoming payload data model
+from fastapi_scaffolding.data_models.payload import HousePredictionPayload
+
+# Outbound prediction result data model
+from fastapi_scaffolding.data_models.prediction import HousePredictionResult
+
+# ML Model object itself
+from fastapi_scaffolding.services.models import HousePriceModel
 
 router = APIRouter()
 

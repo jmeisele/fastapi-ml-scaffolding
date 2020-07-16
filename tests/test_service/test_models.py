@@ -1,8 +1,8 @@
 import pytest
 
 from fastapi_scaffolding.core import config
-from fastapi_scaffolding.models.payload import HousePredictionPayload
-from fastapi_scaffolding.models.prediction import HousePredictionResult
+from fastapi_scaffolding.data_models.payload import HousePredictionPayload
+from fastapi_scaffolding.data_models.prediction import HousePredictionResult
 from fastapi_scaffolding.services.models import HousePriceModel
 
 
