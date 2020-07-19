@@ -1,6 +1,6 @@
 # FastAPI Model Server Scaffolding
 
-Serving machine learning models production-ready, fast, easy and secure powered by the great FastAPI by [Sebastián Ramírez]([)](https://github.com/tiangolo).
+Serving machine learning models production-ready, fast, easy and secure powered by FastAPI by [Sebastián Ramírez](https://github.com/tiangolo).
 
 This repository contains a starter app which can be used to speed-up your next machine learning project. 
 
