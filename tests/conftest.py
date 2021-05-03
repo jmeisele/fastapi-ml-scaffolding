@@ -5,7 +5,7 @@ from starlette.testclient import TestClient
 environ["API_KEY"] = "a1279d26-63ac-41f1-8266-4ef3702ad7cb"
 environ["DEFAULT_MODEL_PATH"] = "./sample_model/lin_reg_california_housing_model.joblib"
 
-from fastapi_scaffolding.main import get_app  # noqa: E402
+from app.main import get_app  # noqa: E402
 
 
 @pytest.fixture()

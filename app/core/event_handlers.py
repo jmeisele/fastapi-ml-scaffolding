@@ -1,12 +1,10 @@
-
-
 from typing import Callable
 
 from fastapi import FastAPI
 from loguru import logger
 
-from fastapi_scaffolding.core.config import DEFAULT_MODEL_PATH
-from fastapi_scaffolding.services.models import HousePriceModel
+from app.core.config import DEFAULT_MODEL_PATH
+from app.services.models import HousePriceModel
 
 
 def _startup_model(app: FastAPI) -> None:
@@ -23,6 +21,7 @@ def start_app_handler(app: FastAPI) -> Callable:
     def startup() -> None:
         logger.info("Running app start handler.")
         _startup_model(app)
+
     return startup
 
 
@@ -30,4 +29,5 @@ def stop_app_handler(app: FastAPI) -> Callable:
     def shutdown() -> None:
         logger.info("Running app shutdown handler.")
         _shutdown_model(app)
+
     return shutdown

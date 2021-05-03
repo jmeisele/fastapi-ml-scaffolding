@@ -1,5 +1,3 @@
-
-
 import secrets
 from typing import Optional
 
@@ -7,8 +5,8 @@ from fastapi import HTTPException, Security
 from fastapi.security.api_key import APIKeyHeader
 from starlette.status import HTTP_400_BAD_REQUEST, HTTP_401_UNAUTHORIZED
 
-from fastapi_scaffolding.core import config
-from fastapi_scaffolding.core.messages import AUTH_REQ, NO_API_KEY
+from app.core import config
+from app.core.messages import AUTH_REQ, NO_API_KEY
 
 api_key = APIKeyHeader(name="token", auto_error=False)
 

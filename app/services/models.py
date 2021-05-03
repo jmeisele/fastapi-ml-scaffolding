@@ -4,10 +4,9 @@ import joblib
 import numpy as np
 from loguru import logger
 
-from fastapi_scaffolding.core.messages import NO_VALID_PAYLOAD
-from fastapi_scaffolding.data_models.payload import (HousePredictionPayload,
-                                                     payload_to_list)
-from fastapi_scaffolding.data_models.prediction import HousePredictionResult
+from app.core.messages import NO_VALID_PAYLOAD
+from app.data_models.payload import HousePredictionPayload, payload_to_list
+from app.data_models.prediction import HousePredictionResult
 
 
 class HousePriceModel(object):
