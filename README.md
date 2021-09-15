@@ -1,3 +1,6 @@
+[![learn-github-actions](https://github.com/jmeisele/fastapi-ml-scaffolding/actions/workflows/learn-github-actions.yml/badge.svg)](https://github.com/jmeisele/fastapi-ml-scaffolding/actions/workflows/learn-github-actions.yml)
+
+
 # FastAPI Model Server Scaffolding
 
 Serving machine learning models production-ready, fast, easy and secure powered by FastAPI by [Sebastián Ramírez](https://github.com/tiangolo).
