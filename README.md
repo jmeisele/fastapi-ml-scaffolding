@@ -1,4 +1,4 @@
-[![learn-github-actions](https://github.com/jmeisele/fastapi-ml-scaffolding/actions/workflows/learn-github-actions.yml/badge.svg)](https://github.com/jmeisele/fastapi-ml-scaffolding/actions/workflows/learn-github-actions.yml)
+[![tests](https://github.com/jmeisele/fastapi-ml-scaffolding/actions/workflows/python-app.yml/badge.svg)](https://github.com/jmeisele/fastapi-ml-scaffolding/actions/workflows/python-app.yml)
 
 
 # FastAPI Model Server Scaffolding
