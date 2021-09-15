@@ -1,0 +1,11 @@
+name: tests
+on: [push]
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - run: docker 
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello from github actions!"
