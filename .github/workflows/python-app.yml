@@ -37,6 +37,7 @@ jobs:
     - name: Format with black
       run: |
         black .
+
     - name: Test with pytest
       run: |
         pytest
