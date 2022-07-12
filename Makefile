@@ -1,5 +1,5 @@
 PROJECT=fastapi-ml-scaffolding
-PYTHON_VERSION=3.6.13
+PYTHON_VERSION=3.8.0
 
 SOURCE_OBJECTS=app tests
 
