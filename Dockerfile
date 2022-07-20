@@ -1,4 +1,4 @@
-FROM python:3.6.13 as base
+FROM python:3.8.0 as base
 
 # copy our project code
 COPY ./requirements.txt /app/requirements.txt
